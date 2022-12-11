@@ -1,0 +1,52 @@
+<html><head><base target="_blank"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/style.css">
+    <script id="gamedistribution-jssdk" src=""></script><script src="https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/UnityProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/unityloader49.js"></script>
+
+    <script type="text/javascript">
+      var gameInstance;
+      window.onload = function () {
+        let  bttn = document.createElement( "button" );
+        bttn.appendChild(document.createTextNode( "CLICK TO PLAY NOW" ));
+        bttn.setAttribute('id', 'run_game');
+        bttn.style.display = 'none';
+        bttn.style.position = 'absolute';
+        document.body.appendChild(bttn);
+        bttn.style.display = 'block';
+        bttn.style.left = ((document.body.clientWidth - bttn.offsetWidth)/2) + 'px';
+        bttn.style.top = ((document.body.clientHeight - bttn.offsetHeight)/2) + 'px';
+        bttn.onclick = function () {
+          gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/hyperwood/h4tfgh7@c4d52c61c545cc2d537d647ee6a882856d9baf34/tunnel-rush_v9.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+          this.remove();
+        }
+      }
+    </script>
+    </head><body><div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; position: relative; background: rgb(128, 128, 128);"><canvas id="#canvas" style="cursor: default;" width="690" height="598"></canvas><div class="logo Dark" style="display: none;"></div><div class="progress Dark" style="display: none;"><div class="empty" style="width: 0%;"></div><div class="full" style="width: 100%;"></div></div></div>
+    </div>
+<style>
+button {
+  min-width: 100%;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 18px 46px;
+  font-size: 28px;
+  cursor: pointer;
+}
+button:hover {
+  background: #3f3f3f;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+} 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+</style><script src="blob:https://1963006518-atari-embeds.googleusercontent.com/4492803f-204b-40ae-9268-ca01e98c306b"></script></body></html>

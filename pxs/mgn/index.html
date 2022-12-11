@@ -1,61 +1,76 @@
-<html><head><base target="_blank">
-</head><body><button class="button">Open MGN</button>
-<script>
-    var urlObj = new window.URL(window.location.href);
-    var url = "https://www.mysticmath.tk";
-    if (url) {
-        var win;
+<html>
+<link href="/css/style.css" rel="stylesheet">
 
-        document.querySelector('button').onclick = function() {
-            if (win) {
-                win.focus();
-            }
-            else {
-                win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = url;
-                win.document.body.appendChild(iframe);
-            }
-            document.querySelector('button').style.background='#ff5148';
-            document.querySelector('button').innerHTML="MGN Loaded!";
-        };
-    }
-</script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+<head>
+	<base target="_blank">
+</head>
 
-* {
-    color: white;
-    font-family: arial;
-    text-align: center;
-}
-button {
-    font-family: Comfortaa;
-    width: 220px;
-    height: 40px;
-    border-radius: 12px;
-    background-color: #5D02D8;
-    border: none;
-    transition: background-color 500ms;
-    margin: 0 auto;
-}
+<body><button class="button">Open MGN</button>
+	<script>
+		var urlObj = new window.URL(window.location.href);
+		var url = "https://mysticmath.tk/";
+		if (url) {
+			var win;
 
-.button:hover {
-   transition: transform .6s;
-   background-color: #5D02D8;
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
-}
-</style>
+			document.querySelector('button').onclick = function () {
+				if (win) {
+					win.focus();
+				}
+				else {
+					win = window.open();
+					win.document.body.style.margin = '0';
+					win.document.body.style.height = '100vh';
+					var iframe = win.document.createElement('iframe');
+					iframe.style.border = 'none';
+					iframe.style.width = '100%';
+					iframe.style.height = '100%';
+					iframe.style.margin = '0';
+					iframe.src = url;
+					win.document.body.appendChild(iframe);
+				}
+				document.querySelector('button').style.background = '#5D02D8';
+				document.querySelector('button').innerHTML = "MGN Loaded!";
+			};
+		}
+	</script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+		* {
+			color: white;
+			font-family: arial;
+			text-align: center;
+		}
+
+		button {
+			font-family: Comfortaa;
+			width: 220px;
+			height: 40px;
+			border-radius: 12px;
+			background-color: #5D02D8;
+			border: none;
+			transition: background-color 500ms;
+			margin: 0 auto;
+			border-width: 2px;
+	border-style: solid;
+	border-color: white;
+		}
+
+		.button:hover {
+			transition: transform .6s;
+			background-color: #5D02D8;
+			-ms-transform: scale(1.1);
+			/* IE 9 */
+			-webkit-transform: scale(1.1);
+			/* Safari 3-8 */
+			transform: scale(1.1);
+		}
+	</style>
 
 
 
 
-<div></div></body></html>
+	<div></div>
+</body>
+
+</html>

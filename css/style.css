@@ -5,6 +5,12 @@ font-family: 'Comfortaa', cursive;
 	color: white;
 		overflow: hidden;
 }
+.footer {
+	bottom: 0px;
+	left: 0px;
+	margin: 20px;
+	position: fixed;
+}
 .main {
 	display: flex;
 	 flex-direction: column;
