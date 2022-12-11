@@ -1,3 +1,4 @@
+![MercuryBookmarklet](https://socialify.git.ci/GamingReborn/MercuryBookmarklet/image?description=1&font=Raleway&forks=1&language=1&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark)
 # Mercury
 ### game changing bookmarklet with games, proxies and more
 
