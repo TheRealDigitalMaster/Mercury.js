@@ -170,3 +170,9 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 .toggler:checked ~ .menu > div > ul > li > a:hover{
     color: orange;
 }
+.link:link {
+	color: black;
+}
+.link:visited {
+	color: white;
+}
