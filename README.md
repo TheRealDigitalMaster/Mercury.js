@@ -10,6 +10,5 @@ Step 3. Set the name to whatever and set the page to this
 ``` js
 javascript:(function () {var a = document.createElement('script');a.src = 'https://www.mercuryworld.ml/js/script.js';document.body.appendChild(a);}())
 ```
-Step 4. Enjoy!
 ## if plan 1 doesn't work, type "javascript:" into bookmarks bar then paste the code
 enjoy!
