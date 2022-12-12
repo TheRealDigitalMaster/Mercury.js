@@ -31,3 +31,11 @@ const copyAutoClicker = async () => {
 		console.error('Failed to copy: ', err);
 	}
 }
+const copyAutoClicker = async () => {
+	try {
+		await navigator.clipboard.writeText("")
+		console.log('Content copied to clipboard');
+	} catch (err) {
+		console.error('Failed to copy: ', err);
+	}
+}
