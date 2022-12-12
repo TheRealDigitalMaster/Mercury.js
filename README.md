@@ -12,6 +12,6 @@ Step 3. Set the name to whatever and set the page to this
 javascript:(function () {var a = document.createElement('script');a.src = 'https://www.mercuryworld.ml/js/script.js';document.body.appendChild(a);}())
 ```
 ## if plan 1 doesn't work, type "javascript:" into bookmarks bar then paste the code
-If you would like to suggest any features join the JServices discord!
+If you would like to suggest any features join the JServices discord or make an issue on the github repo!
 
 enjoy!
